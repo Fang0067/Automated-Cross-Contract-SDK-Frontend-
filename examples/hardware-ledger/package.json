@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "dev:mock": "vite --mode mock",
-    "build": "tsc && vite build",
+    "dev": "node init && vite",
+    "dev:mock": "node init && vite --mode mock",
+    "build": "node init && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

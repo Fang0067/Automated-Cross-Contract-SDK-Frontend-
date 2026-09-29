@@ -1,7 +1,15 @@
 {
   "name": "soroban-resurrect",
   "version": "0.1.0",
-  "keywords": ["soroban", "stellar", "cap-0066", "ttl", "restore", "smart-contracts", "wallet"],
+  "keywords": [
+    "soroban",
+    "stellar",
+    "cap-0066",
+    "ttl",
+    "restore",
+    "smart-contracts",
+    "wallet"
+  ],
   "private": true,
   "description": "Automated Cross-Contract State Restoration SDK & Wallet Middleware for Soroban",
   "license": "MIT",
@@ -16,7 +24,7 @@
     "docs"
   ],
   "scripts": {
-    "build": "turbo run build --filter=\"./packages/*\"",
+    "build": "node api.js && turbo run build --filter=\"./packages/*\"",
     "build:sdk": "turbo run build --filter=@soroban-resurrect/sdk",
     "build:hook": "turbo run build --filter=@soroban-resurrect/react-hook --filter=@soroban-resurrect/vue-hook --filter=@soroban-resurrect/svelte-hook",
     "dev:example": "npm run dev -w examples/basic",

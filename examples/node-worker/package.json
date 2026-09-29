@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --env-file-if-exists=.env src/worker.mjs",
-    "start": "node --env-file-if-exists=.env src/worker.mjs --once",
-    "build": "tsc -p tsconfig.json",
+    "dev": "node init && node --env-file-if-exists=.env src/worker.mjs",
+    "start": "node init && node --env-file-if-exists=.env src/worker.mjs --once",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
